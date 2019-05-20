@@ -142,10 +142,12 @@ input[type="text"]
 #rating-status
 {
 	display: inline-block;
+	color: #B70000;
 }
 #selected-mascot
 {
-	color: red;
+	color: #B70000;
+	font-weight: 900;
 }
 @media only screen and (max-width: 500px) 
 {
@@ -167,6 +169,22 @@ input[type="text"]
 	{
 		width: 90%;
 	}
+}
+input[type=text]:focus
+{
+	outline: none;
+}
+::placeholder {
+  color: #ECECEC;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color: #ECECEC;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+ color: #ECECEC;
 }
 </style>
 </head>
@@ -198,7 +216,7 @@ input[type="text"]
 		</div>
 
 		<div id="bottom-content-1">
-			<p><b>Overall Rating for Facilities</b> (1 -lowest, 5-highest)</p>
+			<p style="font-weight: 900;"><b>Overall Rating for Facilities</b> (1 -lowest, 5-highest)</p>
 			<div class="rating">
 			    <input type="radio" id="star4" name="rating" value="4" /><label for="star4"></label>
 			    <input type="radio" id="star3" name="rating" value="3" /><label for="star3"></label>
@@ -208,7 +226,7 @@ input[type="text"]
 			</div>
 			<p id="rating-status"></p> <br>
 
-			<p style="display: inline-block;"><b>Share your reasons for selecting &nbsp&nbsp </p><p style="display: inline-block;" id="selected-mascot"></p></b><br>
+			<p style="display: inline-block;font-weight: 900;"><b>Share your reasons for selecting &nbsp&nbsp </p><p style="display: inline-block;" id="selected-mascot"></p></b><br>
 
 			<input type="checkbox">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan.</br>
 			<input type="checkbox">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan.</br>
@@ -218,12 +236,12 @@ input[type="text"]
 
 		<div id="bottom-content-2">
 			<p><b>Any more reasons?</b></p>
-			<input type="text"></br>
-			<input type="text"></br>
-			<input type="text"></br>
-			<input type="text"></br>
-			<input type="text"></br>
-			<input type="text"></br>
+			<input type="text" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit."></br>
+			<input type="text" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit."></br>
+			<input type="text" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit."></br>
+			<input type="text" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit."></br>
+			<input type="text" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit."></br>
+			<input type="text" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit."></br>
 		</div>
 
 		<div id="bottom-content-3">
@@ -296,16 +314,16 @@ input[type="text"]
 		console.log("oye hoye");
 		id=$(this).attr("id");
 		if(id=="star1"){
-			$("#rating-status").html("Improvement Needed");
+			$("#rating-status").html("IMPROVEMENT NEEDED");
 		}
 		else if(id=="star2"){
-			$("#rating-status").html("Could be better");	
+			$("#rating-status").html("COULD BE BETTER");	
 		}
 		else if(id=="star3"){
-			$("#rating-status").html("Good! Keep it up");	
+			$("#rating-status").html("GOOD! KEEP IT UP");	
 		}
 		else{
-			$("#rating-status").html("Excellent Rating");
+			$("#rating-status").html("EXCELLENT RATING");
 		}
 
 	});
