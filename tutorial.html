@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Elect Your Mascot - tutorial </title>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
+<style type="text/css">
+#topbar
+{
+	box-shadow: 0 2px 2px 2px #D7D6D6;
+	margin: 0;
+	padding: 0;
+}
+img.logo
+{
+	width:12%;
+	padding-left: 2%;
+}
+p
+{
+	margin-top: 15%;
+	font-size: 2.5em;
+}
+button
+{
+	background-color: #24B68A;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	margin-left: 2%;
+	margin-right: 2%;
+}
+button:hover
+{
+	background-color: white;
+	color: black;
+}
+#buttons
+{
+	text-align: center;
+}
+body
+{
+	margin: 0;
+	font-family: 'Josefin Sans';
+}
+@media only screen and (max-width: 500px) {
+  button 
+  {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 2%;
+  }
+
+}
+</style>
+</head>
+<body>
+	<div id="topbar">
+		<img class="logo" src="logo.png">
+	</div>
+	<p align="center">Would you like a tutorial on how the system works?</p>
+	<div id="buttons">
+		<button>YES, I'D LIKE THAT</button>
+		<button onclick="Redirect()">NO, I CAN START</button>
+	</div>
+<script>
+	function Redirect()
+	{
+		window.location.href="voting.html";
+	}
+</script>
+</body>
+</html>

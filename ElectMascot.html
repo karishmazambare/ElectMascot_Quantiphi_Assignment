@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Introduction
+	</title>
+	<meta charset="UTF-8">
+	<link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
+<style>
+body
+{
+	font-family: 'Josefin Sans';
+}
+img
+{
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 10%;
+	margin-bottom: 0%;
+	width: 20%;
+}
+p
+{
+	display: block;
+	margin-top: 0%;
+	font-size: 5em;
+	margin-bottom: 3%;
+}
+button
+{
+	background-color: #24B68A;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+button:hover
+{
+	background-color: white;
+	color: black;
+}
+div
+{
+	text-align: center;
+}
+#footer
+{
+	position: absolute;
+	bottom: 0;
+	color: grey;
+	font-size: 20px;
+	width: 98%;
+	text-align: center;
+}
+</style>
+</head>
+<body>
+	<div>
+	<img src="./logo.png">
+	<p>Welcome to election day!</p>
+	<button onclick="Redirect()">ELECT YOUR MASCOTS</button>
+	</div>
+
+	<p id="footer">None of your personal details will be asked during the survey. Rest assured, we're awesome.</p>
+
+<script type="text/javascript">
+	function Redirect()
+	{
+		window.location.href = 'tutorial.html';
+	}
+</script>
+</body>
+</html>
